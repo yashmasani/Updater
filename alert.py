@@ -11,7 +11,8 @@ def currencyPosition(isLong,currency, initialPrice,sl):
     else :
         slPrice = initialPrice + sl
 
+    print ( str(round(newPrice,5)) + "," + str(round(slPrice,5)))
     
-    return round(newPrice-initialPrice,5), round(slPrice,5)
-    
+if __name__ == "__main__":
+    currencyPosition(True,"AUDUSD",0.78133,0.03)
 
